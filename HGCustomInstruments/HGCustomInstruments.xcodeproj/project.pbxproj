@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		514BE344229A7567003278CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BE343229A7567003278CD /* AppDelegate.swift */; };
+		514BE349229A7567003278CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514BE347229A7567003278CD /* Main.storyboard */; };
+		514BE34B229A7568003278CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514BE34A229A7568003278CD /* Assets.xcassets */; };
+		514BE34E229A7568003278CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514BE34C229A7568003278CD /* LaunchScreen.storyboard */; };
+		514BE357229A759E003278CD /* HGController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BE356229A759E003278CD /* HGController.swift */; };
+		514BE35D229A7859003278CD /* HGTick.instrpkg in Sources */ = {isa = PBXBuildFile; fileRef = 514BE35C229A7859003278CD /* HGTick.instrpkg */; };
+		514BE366229A9263003278CD /* HGJSONDecode.instrpkg in Sources */ = {isa = PBXBuildFile; fileRef = 514BE365229A9263003278CD /* HGJSONDecode.instrpkg */; };
+		514BE36B229A9374003278CD /* JSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BE36A229A9374003278CD /* JSONViewController.swift */; };
+		514BE36E229A95DE003278CD /* OSLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BE36D229A95DE003278CD /* OSLogViewController.swift */; };
+		514BE371229A9733003278CD /* ImageDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BE370229A9733003278CD /* ImageDownloadViewController.swift */; };
+		514BE373229A978B003278CD /* HGImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BE372229A978B003278CD /* HGImageDownload.swift */; };
+		514BE375229A97F6003278CD /* HGSignpostLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BE374229A97F6003278CD /* HGSignpostLog.swift */; };
+		514BE377229A986C003278CD /* HGImageDownloadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BE376229A986C003278CD /* HGImageDownloadCell.swift */; };
+		514BE37D229AA23B003278CD /* HGImageDownload.instrpkg in Sources */ = {isa = PBXBuildFile; fileRef = 514BE37C229AA23B003278CD /* HGImageDownload.instrpkg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		514BE340229A7567003278CD /* HGCustomInstruments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGCustomInstruments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		514BE343229A7567003278CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		514BE348229A7567003278CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		514BE34A229A7568003278CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		514BE34D229A7568003278CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		514BE34F229A7568003278CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		514BE356229A759E003278CD /* HGController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGController.swift; sourceTree = "<group>"; };
+		514BE35A229A7858003278CD /* HGTick.instrdst */ = {isa = PBXFileReference; explicitFileType = com.apple.instruments.instrdst; includeInIndex = 0; path = HGTick.instrdst; sourceTree = BUILT_PRODUCTS_DIR; };
+		514BE35C229A7859003278CD /* HGTick.instrpkg */ = {isa = PBXFileReference; lastKnownFileType = "com.apple.instruments.package-definition"; path = HGTick.instrpkg; sourceTree = "<group>"; };
+		514BE363229A9263003278CD /* HGJSONDecode.instrdst */ = {isa = PBXFileReference; explicitFileType = com.apple.instruments.instrdst; includeInIndex = 0; path = HGJSONDecode.instrdst; sourceTree = BUILT_PRODUCTS_DIR; };
+		514BE365229A9263003278CD /* HGJSONDecode.instrpkg */ = {isa = PBXFileReference; lastKnownFileType = "com.apple.instruments.package-definition"; path = HGJSONDecode.instrpkg; sourceTree = "<group>"; };
+		514BE36A229A9374003278CD /* JSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewController.swift; sourceTree = "<group>"; };
+		514BE36D229A95DE003278CD /* OSLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLogViewController.swift; sourceTree = "<group>"; };
+		514BE370229A9733003278CD /* ImageDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadViewController.swift; sourceTree = "<group>"; };
+		514BE372229A978B003278CD /* HGImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGImageDownload.swift; sourceTree = "<group>"; };
+		514BE374229A97F6003278CD /* HGSignpostLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGSignpostLog.swift; sourceTree = "<group>"; };
+		514BE376229A986C003278CD /* HGImageDownloadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGImageDownloadCell.swift; sourceTree = "<group>"; };
+		514BE37A229AA23B003278CD /* HGImageDownload.instrdst */ = {isa = PBXFileReference; explicitFileType = com.apple.instruments.instrdst; includeInIndex = 0; path = HGImageDownload.instrdst; sourceTree = BUILT_PRODUCTS_DIR; };
+		514BE37C229AA23B003278CD /* HGImageDownload.instrpkg */ = {isa = PBXFileReference; lastKnownFileType = "com.apple.instruments.package-definition"; path = HGImageDownload.instrpkg; sourceTree = "<group>"; };
+		514BE381229AA26A003278CD /* duplicate-call-detection.clp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.clips; path = "duplicate-call-detection.clp"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		514BE33D229A7567003278CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		514BE337229A7567003278CD = {
+			isa = PBXGroup;
+			children = (
+				514BE342229A7567003278CD /* HGCustomInstruments */,
+				514BE35B229A7859003278CD /* HGTick */,
+				514BE364229A9263003278CD /* HGJSONDecode */,
+				514BE37B229AA23B003278CD /* HGImageDownload */,
+				514BE341229A7567003278CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		514BE341229A7567003278CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				514BE340229A7567003278CD /* HGCustomInstruments.app */,
+				514BE35A229A7858003278CD /* HGTick.instrdst */,
+				514BE363229A9263003278CD /* HGJSONDecode.instrdst */,
+				514BE37A229AA23B003278CD /* HGImageDownload.instrdst */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		514BE342229A7567003278CD /* HGCustomInstruments */ = {
+			isa = PBXGroup;
+			children = (
+				514BE36F229A971E003278CD /* ImageDownload */,
+				514BE36C229A95C8003278CD /* OSlog */,
+				514BE355229A757D003278CD /* JSON */,
+				514BE343229A7567003278CD /* AppDelegate.swift */,
+				514BE356229A759E003278CD /* HGController.swift */,
+				514BE347229A7567003278CD /* Main.storyboard */,
+				514BE34A229A7568003278CD /* Assets.xcassets */,
+				514BE34C229A7568003278CD /* LaunchScreen.storyboard */,
+				514BE34F229A7568003278CD /* Info.plist */,
+			);
+			path = HGCustomInstruments;
+			sourceTree = "<group>";
+		};
+		514BE355229A757D003278CD /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				514BE36A229A9374003278CD /* JSONViewController.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		514BE35B229A7859003278CD /* HGTick */ = {
+			isa = PBXGroup;
+			children = (
+				514BE35C229A7859003278CD /* HGTick.instrpkg */,
+			);
+			path = HGTick;
+			sourceTree = "<group>";
+		};
+		514BE364229A9263003278CD /* HGJSONDecode */ = {
+			isa = PBXGroup;
+			children = (
+				514BE365229A9263003278CD /* HGJSONDecode.instrpkg */,
+			);
+			path = HGJSONDecode;
+			sourceTree = "<group>";
+		};
+		514BE36C229A95C8003278CD /* OSlog */ = {
+			isa = PBXGroup;
+			children = (
+				514BE36D229A95DE003278CD /* OSLogViewController.swift */,
+			);
+			path = OSlog;
+			sourceTree = "<group>";
+		};
+		514BE36F229A971E003278CD /* ImageDownload */ = {
+			isa = PBXGroup;
+			children = (
+				514BE370229A9733003278CD /* ImageDownloadViewController.swift */,
+				514BE372229A978B003278CD /* HGImageDownload.swift */,
+				514BE374229A97F6003278CD /* HGSignpostLog.swift */,
+				514BE376229A986C003278CD /* HGImageDownloadCell.swift */,
+			);
+			path = ImageDownload;
+			sourceTree = "<group>";
+		};
+		514BE37B229AA23B003278CD /* HGImageDownload */ = {
+			isa = PBXGroup;
+			children = (
+				514BE37C229AA23B003278CD /* HGImageDownload.instrpkg */,
+				514BE381229AA26A003278CD /* duplicate-call-detection.clp */,
+			);
+			path = HGImageDownload;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		514BE33F229A7567003278CD /* HGCustomInstruments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 514BE352229A7568003278CD /* Build configuration list for PBXNativeTarget "HGCustomInstruments" */;
+			buildPhases = (
+				514BE33C229A7567003278CD /* Sources */,
+				514BE33D229A7567003278CD /* Frameworks */,
+				514BE33E229A7567003278CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HGCustomInstruments;
+			productName = HGCustomInstruments;
+			productReference = 514BE340229A7567003278CD /* HGCustomInstruments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		514BE359229A7858003278CD /* HGTick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 514BE360229A7859003278CD /* Build configuration list for PBXNativeTarget "HGTick" */;
+			buildPhases = (
+				514BE358229A7858003278CD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HGTick;
+			productName = HGTick;
+			productReference = 514BE35A229A7858003278CD /* HGTick.instrdst */;
+			productType = "com.apple.product-type.instruments-package";
+		};
+		514BE362229A9263003278CD /* HGJSONDecode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 514BE367229A9263003278CD /* Build configuration list for PBXNativeTarget "HGJSONDecode" */;
+			buildPhases = (
+				514BE361229A9263003278CD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HGJSONDecode;
+			productName = HGJSONDecode;
+			productReference = 514BE363229A9263003278CD /* HGJSONDecode.instrdst */;
+			productType = "com.apple.product-type.instruments-package";
+		};
+		514BE379229AA23B003278CD /* HGImageDownload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 514BE37E229AA23B003278CD /* Build configuration list for PBXNativeTarget "HGImageDownload" */;
+			buildPhases = (
+				514BE378229AA23B003278CD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HGImageDownload;
+			productName = HGImageDownload;
+			productReference = 514BE37A229AA23B003278CD /* HGImageDownload.instrdst */;
+			productType = "com.apple.product-type.instruments-package";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		514BE338229A7567003278CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = CoderHG;
+				TargetAttributes = {
+					514BE33F229A7567003278CD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					514BE359229A7858003278CD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					514BE362229A9263003278CD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					514BE379229AA23B003278CD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 514BE33B229A7567003278CD /* Build configuration list for PBXProject "HGCustomInstruments" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 514BE337229A7567003278CD;
+			productRefGroup = 514BE341229A7567003278CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				514BE33F229A7567003278CD /* HGCustomInstruments */,
+				514BE359229A7858003278CD /* HGTick */,
+				514BE362229A9263003278CD /* HGJSONDecode */,
+				514BE379229AA23B003278CD /* HGImageDownload */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		514BE33E229A7567003278CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514BE34E229A7568003278CD /* LaunchScreen.storyboard in Resources */,
+				514BE34B229A7568003278CD /* Assets.xcassets in Resources */,
+				514BE349229A7567003278CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		514BE33C229A7567003278CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514BE357229A759E003278CD /* HGController.swift in Sources */,
+				514BE375229A97F6003278CD /* HGSignpostLog.swift in Sources */,
+				514BE371229A9733003278CD /* ImageDownloadViewController.swift in Sources */,
+				514BE373229A978B003278CD /* HGImageDownload.swift in Sources */,
+				514BE344229A7567003278CD /* AppDelegate.swift in Sources */,
+				514BE36B229A9374003278CD /* JSONViewController.swift in Sources */,
+				514BE377229A986C003278CD /* HGImageDownloadCell.swift in Sources */,
+				514BE36E229A95DE003278CD /* OSLogViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514BE358229A7858003278CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514BE35D229A7859003278CD /* HGTick.instrpkg in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514BE361229A9263003278CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514BE366229A9263003278CD /* HGJSONDecode.instrpkg in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514BE378229AA23B003278CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514BE37D229AA23B003278CD /* HGImageDownload.instrpkg in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		514BE347229A7567003278CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				514BE348229A7567003278CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		514BE34C229A7568003278CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				514BE34D229A7568003278CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		514BE350229A7568003278CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		514BE351229A7568003278CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		514BE353229A7568003278CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8Y5E9ZUX3;
+				INFOPLIST_FILE = HGCustomInstruments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HGCustomInstruments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		514BE354229A7568003278CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8Y5E9ZUX3;
+				INFOPLIST_FILE = HGCustomInstruments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HGCustomInstruments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		514BE35E229A7859003278CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8Y5E9ZUX3;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		514BE35F229A7859003278CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8Y5E9ZUX3;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		514BE368229A9263003278CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8Y5E9ZUX3;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		514BE369229A9263003278CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8Y5E9ZUX3;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		514BE37F229AA23B003278CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8Y5E9ZUX3;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		514BE380229AA23B003278CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8Y5E9ZUX3;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		514BE33B229A7567003278CD /* Build configuration list for PBXProject "HGCustomInstruments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514BE350229A7568003278CD /* Debug */,
+				514BE351229A7568003278CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		514BE352229A7568003278CD /* Build configuration list for PBXNativeTarget "HGCustomInstruments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514BE353229A7568003278CD /* Debug */,
+				514BE354229A7568003278CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		514BE360229A7859003278CD /* Build configuration list for PBXNativeTarget "HGTick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514BE35E229A7859003278CD /* Debug */,
+				514BE35F229A7859003278CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		514BE367229A9263003278CD /* Build configuration list for PBXNativeTarget "HGJSONDecode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514BE368229A9263003278CD /* Debug */,
+				514BE369229A9263003278CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		514BE37E229AA23B003278CD /* Build configuration list for PBXNativeTarget "HGImageDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514BE37F229AA23B003278CD /* Debug */,
+				514BE380229AA23B003278CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 514BE338229A7567003278CD /* Project object */;
+}

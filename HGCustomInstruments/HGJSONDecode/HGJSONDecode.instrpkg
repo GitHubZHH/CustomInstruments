@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package>
+	<id>com.coderhg.HGJSONDecode</id>
+	<title>HGJSONDecode</title>
+	<owner>
+		<name>hong.zhu</name>
+	</owner>
+    
+    <!-- 可以理解成一个数据来源 -->
+    <os-signpost-interval-schema>
+        <id>json-parse</id>
+        <title>JSON Decode</title>
+        
+        <!-- 这三个是与项目中一一对应 -->
+        <subsystem>"com.coderhg.json"</subsystem>
+        <category>"JSONDecode"</category>
+        <name>"Parsing"</name>
+        
+        <!-- 开始匹配-->
+        <start-pattern>
+            <message>"Parsing started"</message>
+        </start-pattern>
+        
+        <!-- 结束匹配-->
+        <end-pattern>
+            <message>"Parsing finished SIZE:" ?data-size-value</message>
+        </end-pattern>
+        
+        <!-- 表中的一列 -->
+        <column>
+            <!-- 助记符标识, 在 graph 与 list 中只认这个标识 -->
+            <mnemonic>data-size</mnemonic>
+            <title>JSON Data Size</title>
+            <!-- 数据的类型 size-in-bytes -->
+            <type>size-in-bytes</type>
+            <!-- 显示 data-size 的值  -->
+            <expression>?data-size-value</expression>
+        </column>
+        
+        <!-- https://help.apple.com/instruments/developer/mac/current/#/dev66257045 -->
+        <column>
+            <mnemonic>impact</mnemonic>
+            <title>Impact</title>
+            <type>event-concept</type>
+            <expression>(if (&gt; ?data-size-value 80) then "High" else "Low")</expression>
+        </column>
+        
+    </os-signpost-interval-schema>
+    
+    
+    <instrument>
+        <id>com.coderhg.json</id>
+        <title>JSON Decode</title>
+        <category>Behavior</category>
+        <purpose>JSON Decode.</purpose>
+        <icon>Generic</icon>
+        
+        <!-- 表 -->
+        <create-table>
+            <id>json-parse</id>
+            <!-- os-signpost-interval-schema 的 id -->
+            <schema-ref>json-parse</schema-ref>
+        </create-table>
+        
+        <!-- Define graph to draw for your Instrument (optional) -->
+        <graph>
+            <title>JSON Decode</title>
+            <lane>
+                <title>JSON Analyz</title>
+                <table-ref>json-parse</table-ref>
+                
+                <!-- plot, plot-template or histogram elements -->
+                <plot>
+                    <value-from>data-size</value-from>
+                    <color-from>impact</color-from>
+                </plot>
+            </lane>
+        </graph>
+        
+        <!-- Define at least one detail view for your Instrument -->
+        <list>
+            <title>data-info</title>
+            <table-ref>json-parse</table-ref>
+            <column>data-size</column>
+            <column>impact</column>
+            <column>duration</column>
+        </list>
+        
+    </instrument>
+    
+
+    
+</package>
